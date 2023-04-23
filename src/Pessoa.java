@@ -18,4 +18,7 @@ public class Pessoa {
         }
     }
 
+    public void listarDados(){
+        System.out.println("-> Nome: "+ nome + " CPF: " + cpf);
+    }
 }
