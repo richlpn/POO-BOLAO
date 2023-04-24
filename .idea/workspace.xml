@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4acb22dd-f184-470e-9575-e2d73b05d8f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Aposta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aposta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681671283404</updated>
       <workItem from="1681671284628" duration="36000" />
-      <workItem from="1682376781523" duration="1142000" />
+      <workItem from="1682376781523" duration="2594000" />
     </task>
     <servers />
   </component>
