@@ -6,4 +6,12 @@ public class Aposta {
     private ArrayList<Jogador> jogadores;
 
 
- }
+    public Aposta() {
+        this.numeros = new ArrayList<>();
+        this.jogadores = new ArrayList<>();
+    }
+
+    public boolean vencedora(ArrayList<Integer> vencedores){
+        return numeros.containsAll(vencedores);
+    }
+}
