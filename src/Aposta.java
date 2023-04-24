@@ -37,6 +37,42 @@ public class Aposta {
                 numeros.add(numAposta);
             }
         }
+    }
+
+    private Jogador inserirPessoa(ArrayList<Jogador> jogadores){
+
+        Scanner scanner = new Scanner(System.in);
+        String cpf;
+        System.out.println("-> Digite o CPF do jogador a ser adcionado na aposta: ");
+        cpf = scanner.next();
+
+        for (Jogador jog: jogadores) {
+            if(jog.cpf.equals(cpf)) return jog;
+        }
+
+        return null;
+    }
+    public void inserirJogadores(ArrayList<Jogador> jogadores){
+        Scanner scanner = new Scanner(System.in);
+        int numJogadores = -1;
+
+        while(numJogadores <= 0){
+            System.out.println("-> Digite o numero de jogadores da aposta");
+            numJogadores = scanner.nextInt();
+        }
+
+        for (int i = 0; i < numJogadores; i++) {
+            Jogador novoJogador = inserirPessoa(jogadores);
+
+            if (novoJogador == null) {
+                System.out.println("-> PESSOA NÂO ENCONTRADA!");
+                return;
+            }
+            jogadores.add(novoJogador);
+        }
+    }
+
+    public void inserirOrganizador (ArrayList<Jogador> jogadores){
 
     }
 }
