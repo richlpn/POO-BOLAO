@@ -86,4 +86,16 @@ public class Aposta {
         this.organizador = organizador;
 
     }
+
+    public void listarVencedores(double premio){
+        System.out.println("-> Vencedores: ");
+        organizador.listarDados();
+        System.out.println("-> Ganhou: " + premio * 0.1);
+        premio = (premio * 0.9) / this.jogadores.size();
+
+        for (Jogador jog: jogadores) {
+            jog.listarDados();
+            System.out.println("-> Ganhou: " + premio);
+        }
+    }
 }
