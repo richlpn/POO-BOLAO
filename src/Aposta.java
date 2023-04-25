@@ -39,7 +39,7 @@ public class Aposta {
         }
     }
 
-    private Jogador inserirPessoa(ArrayList<Jogador> jogadores){
+    private Jogador findPessoa(ArrayList<Jogador> jogadores){
 
         Scanner scanner = new Scanner(System.in);
         String cpf;
@@ -62,7 +62,7 @@ public class Aposta {
         }
 
         for (int i = 0; i < numJogadores; i++) {
-            Jogador novoJogador = inserirPessoa(jogadores);
+            Jogador novoJogador = findPessoa(jogadores);
 
             if (novoJogador == null) {
                 System.out.println("-> PESSOA NÂO ENCONTRADA!");
@@ -73,6 +73,17 @@ public class Aposta {
     }
 
     public void inserirOrganizador (ArrayList<Jogador> jogadores){
+        Jogador organizador = null;
+
+        for (Jogador jogador: jogadores) {
+            jogador.listarDados();
+        }
+
+        while(organizador == null) {
+         organizador = findPessoa(jogadores);
+        }
+
+        this.organizador = organizador;
 
     }
 }
