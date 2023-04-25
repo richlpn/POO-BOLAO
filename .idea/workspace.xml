@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4acb22dd-f184-470e-9575-e2d73b05d8f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Bolao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Aposta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aposta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bolao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bolao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jogador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pessoa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +48,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="BOLAO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681671283404</updated>
       <workItem from="1681671284628" duration="36000" />
-      <workItem from="1682376781523" duration="6233000" />
+      <workItem from="1682376781523" duration="8002000" />
     </task>
     <servers />
   </component>

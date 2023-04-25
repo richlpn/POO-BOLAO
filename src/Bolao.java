@@ -38,18 +38,29 @@ public class Bolao {
         ArrayList<Integer> sorteados = new ArrayList<>();
         ArrayList<Aposta> vencedores;
         double premioTotal = 0;
+        int numSorteado = -1, cont = 1;
         Scanner scanner = new Scanner(System.in);
 
-        for (int i = 1; i < 7; i++) {
-            System.out.print("-> Digite o " + i + "º numero: ");
-            sorteados.add(scanner.nextInt());
+        while (cont < 7) {
+            System.out.print("-> Digite o " + cont + "º numero: ");
+            numSorteado = scanner.nextInt();
+
+            if(!sorteados.contains(numSorteado)) {
+                sorteados.add(scanner.nextInt());
+                cont++;
+            }
         }
 
         while(premioTotal <= 0) {
             System.out.print("-> Digite o valor total do prêmio: ");
             premioTotal = scanner.nextDouble();
         }
+
         vencedores = vencedoras(sorteados);
+        if(vencedores.size() == 0 ){
+            System.out.println("-> Não houver vencederes!");
+            return;
+        }
         premioTotal = premioTotal / vencedores.size();
 
         for (Aposta aposta: vencedores) {
