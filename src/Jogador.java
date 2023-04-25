@@ -9,9 +9,9 @@ public class Jogador extends Pessoa{
         String valido = "";
 
         while(!valido.equals("sim")){
-            System.out.println("->Digite o pix de " + this.nome + ": ");
+            System.out.print("->Digite o pix de " + this.nome + ": ");
             pix = scanner.next();
-            System.out.println("-> Digite sim para confirmar ou qualquer coisa para tentar novamente: ");
+            System.out.print("-> Digite sim para confirmar ou qualquer coisa para tentar novamente: ");
             valido = scanner.next();
         }
 

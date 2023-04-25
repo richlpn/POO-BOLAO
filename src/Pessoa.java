@@ -13,7 +13,7 @@ public class Pessoa {
             nome = input.next();
             System.out.print("-> Digite o CPF de(a) " + nome + ": ");
             cpf = input.next();
-            System.out.println("-> "+ nome +" é o nome correto? Digite S para confirmar: ");
+            System.out.print("-> "+ nome +" é o nome correto? Digite S para confirmar: ");
             confirm = input.next();
         }
     }
